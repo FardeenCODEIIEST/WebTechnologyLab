@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.">
+  <title>My Portfolio</title>
+  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    section h2 {
+      text-decoration: underline;
+      margin-bottom: 10px;
+      letter-spacing: 2.4px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#almamater">Alma Mater</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="https://www.chess.com/member/skfardeenhossain">Let's Play</a></li>
+        <li><button class="show-modal" style="display:inline-">Options</button></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="modal hidden">
+    <button class="close-modal">&times;</button>
+    <h1>Page Setup</h1>
+    <div class="grid-container">
+      <div class="grid-item1">
+        <div class="items1">
+          <h2>Orientation</h2>
+          <div class="items">
+            <div>
+              <input type="radio">
+              <label>Portrait</label>
+            </div>
+            <div>
+              <input type="radio">
+              <label>Landscape</label>
+            </div>
+          </div>
+          <div class="grid-item3">
+            <label for="ice-cream-choice" style="font-weight: bold;">Paper Size</label>
+            <br>
+            <input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice" />
+
+            <datalist id="ice-cream-flavors">
+              <option value="A4 (21cm x 29.7cm)"></option>
+              <option value="Business Card (8.56cm x 53.98cm)"></option>
+              <option value="Executive (19.05cm x 25.4cm)"></option>
+              <option value="Jr. Legal (20.32cm x 12.7cm)"></option>
+              <option value="Legal (21.59cm x 35.56cm)"></option>
+              <option value="ANSI C (43.2cm x 55.9cm)"></option>
+            </datalist>
+          </div>
+          <div class="grid-item4">
+            <label for="ice-cream-choice1" style="font-weight: bold;">Paper Colour</label>
+            <br>
+            <input list="ice-cream-flavors1" id="ice-cream-choice1" name="ice-cream-choice1" />
+
+            <datalist id="ice-cream-flavors1">
+              <option value="White"></option>
+              <option value="Grey"></option>
+              <option value="Red"></option>
+              <option value="Blue"></option>
+              <option value="Yellow"></option>
+              <option value="Green"></option>
+            </datalist>
+          </div>
+        </div>
+      </div>
+      <div class="grid-item2">
+        <h2>Margins<span style="text-transform: lowercase; color:#e5e5e5; font-weight: lighter;"> (centimeters)</span></h2>
+        <div class="grid-item1">
+          <div>
+            <label>Top</label>
+            <span style="padding-left:50px"></span>
+            <input type="number" step="0.1">
+          </div>
+          <div>
+            <label>Bottom</label>
+            <span style="padding-left:26px"></span>
+            <input type="number" step="0.1">
+          </div>
+          <div>
+            <label>Left</label>
+            <span style="padding-left:50px"></span>
+            <input type="number" step="0.1">
+          </div>
+          <div>
+            <label>Right</label>
+            <span style="padding-left:40px"></span>
+            <input type="number" step="0.1">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="buttons">
+      <button type="submit">OK</button>
+      <button type="reset">Cancel</button>
+      <button type="reset" style="margin-left:450px">Set as Default</button>
+    </div>
+  </div>
+  </div>
+  <div class="overlay hidden"></div>
+  <section id="hero">
+    <h1 style="letter-spacing: 10px;">Welcome Aboard</h1>
+    <p style="letter-spacing: 2px;">Highlighting my work and expertise</p>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello I am Sk Fardeen Hossain, an avid learner, physics enthusiast and a computer science undergrad. Also a chess
+      aficianado 😅! I like to positively think about critical aspects of accentuated motions, randomised genetic
+      algorithms and the rate of inflation in the market 🥲. </p>
+  </section>
+
+  <section id="almamater">
+    <h2>Alma Mater</h2>
+    <ul>
+      <li style="margin-top: 20px;"> 10th (ICSE) <span style="margin-left: 40px;">St.Xaviers, Burdwan</span></li>
+      <hr>
+      <li style="margin-top: 20px;"> 12th (CBSE) <span style="margin-left: 35px;">Abhinav Bharti High School,
+          Kolkata</span></li>
+      <hr>
+      <li style="margin-top: 20px;">Batch of 2021<span style="margin-left:34px">IIEST Shibpur(BEST COLLEGE!!!),
+          Howrah</span></li>
+    </ul>
+  </section>
+
+  <section id="achievements">
+    <h2>Achievements</h2>
+    <ul>
+      <li style="margin-top: 20px;"> 10th (ICSE) <span style="margin-left: 40px;">98.6%</span></li>
+      <hr>
+      <li style="margin-top: 20px;"> 12th (CBSE) <span style="margin-left: 35px;">98.8%</span></li>
+      <hr>
+      <li style="margin-top: 20px;"> InPho <span style="margin-left: 84px;">Qualified for the national camp</span></li>
+      <hr>
+      <li style="margin-top: 20px;"> JEE Mains <span style="margin-left: 47px;">AIR 6678</span></li>
+      <hr>
+      <li style="margin-top: 20px;"> JEE Advanced <span style="margin-left: 20px;">AIR 4886</span></li>
+      <hr>
+      <li style="margin-top: 20px;"> College CGPA <span style="margin-left: 35px;">9.58</span></li>
+      <hr>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2 style="margin-bottom: 30px;">My Projects</h2>
+    <div class="project">
+      <img src="project-1.png" alt="Project 1">
+      <h3>Project 1</h3>
+      <p>This project is used to check your exercises schedule(cycling and running) in a personalised manner compaitible
+        to
+        the user.</p>
+      <a href="https://fardeen-mapty.netlify.app/" target="_blank">View Live</a>
+      <hr>
+      <a href="https://github.com/FardeenCODEIIEST/Mapty" target="_blank">Source Code</a>
+    </div>
+
+    <div class="project">
+      <img src="project-2.png" alt="Project 2">
+      <h3>Project 2</h3>
+      <p>This project explains all the important image processing algorithms alongwith its implementation done in C.
+      </p>
+      <a href="https://fardeencodeiiest.github.io/Image-Processing-in-C/" target="_blank">View Live</a>
+      <hr>
+      <a href="https://github.com/FardeenCODEIIEST/Image-Processing-in-C" target="_blank">Source Code</a>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name">
+      <input type="email" placeholder="Your Email">
+      <textarea placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Fardeen. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>
